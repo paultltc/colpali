@@ -1,7 +1,6 @@
 from typing import Literal
 
 import torch
-
 from transformers import ModernVBertModel, ModernVBertPreTrainedModel
 
 
