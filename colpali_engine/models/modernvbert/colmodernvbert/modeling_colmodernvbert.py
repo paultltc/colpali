@@ -6,7 +6,8 @@ from transformers.core_model_loading import WeightRenaming
 
 class ColModernVBert(ModernVBertPreTrainedModel):
     _checkpoint_conversion_mapping = {
-        r"^base_model\.model\.custom_text_proj": "custom_text_proj",
+          r"^base_model\.model\.model\.text_model": "model.text_model",
+          r"^base_model\.model\.custom_text_proj": "custom_text_proj",
     }
     """
     Initializes the ColModernVBert model.
