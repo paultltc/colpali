@@ -2,7 +2,7 @@ from torch import nn
 from transformers.conversion_mapping import get_checkpoint_conversion_mapping, register_checkpoint_conversion_mapping
 from transformers.core_model_loading import WeightRenaming
 
-from colpali_engine.models.modernvbert.modeling_modernvbert import ModernVBertModel, ModernVBertPreTrainedModel
+from transformers import ModernVBertModel, ModernVBertPreTrainedModel
 
 
 class ColModernVBert(ModernVBertPreTrainedModel):
